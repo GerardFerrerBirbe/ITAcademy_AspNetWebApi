@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici ASP.NET Web API - Getting Started</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getEmployees();
+    </script>
+</head>
+<body>
+    <h1>Gestió Empleats</h1>
+    <h3>Afegir un nou empleat</h3>
+    <form action="javascript:void(0);" method="POST" onsubmit="addEmployee()">
+        <input type="text" id="add-firstName" placeholder="Nom">
+        <input type="text" id="add-lastName" placeholder="Cognoms">
+        <input type="text" id="add-jobPosition" placeholder="Càrrec">
+        <input type="text" id="add-salary" placeholder="Salari">
+        <input type="submit" value="Afegir">
+    </form>    
+
+    <h3>Llistat d'empleats</h3>
+    <p id="counter"></p>
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Cognoms</th>
+            <th>Càrrec</th>
+            <th>Salari</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tbody id="employees"></tbody>
+    </table>
+
+    <div id="editForm">
+        <h3>Editar un empleat</h3>
+        <form action="javascript:void(0);" onsubmit="updateEmployee()">
+            <input type="hidden" id="edit-id">
+            <input type="text" id="edit-firstName">
+            <input type="text" id="edit-lastName">
+            <input type="text" id="edit-jobPosition">
+            <input type="text" id="edit-salary">
+            <input type="submit" value="Guardar">
+            <a onclick="closeInput()" aria-label="Close">&#10006;</a>
+        </form>
+    </div>   
+</body>
+</html>
