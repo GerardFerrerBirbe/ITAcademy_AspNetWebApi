@@ -22,14 +22,16 @@ namespace AspNet_WebApi_GetStarted.Controllers
 
         // GET: api/Employees
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Employee>>> GetEmployees()
+        public async Task<ActionResult<IEnumerable<EmployeeDTO>>> GetEmployees()
         {
-            return await _context.Employees.ToListAsync();
+            return await _context.Employees
+                .Select(x => EmployeeToDTO(x))
+                .ToListAsync();
         }
 
         // GET: api/Employees/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Employee>> GetEmployee(int id)
+        public async Task<ActionResult<EmployeeDTO>> GetEmployee(int id)
         {
             var employee = await _context.Employees.FindAsync(id);
 
@@ -38,19 +40,29 @@ namespace AspNet_WebApi_GetStarted.Controllers
                 return NotFound();
             }
 
-            return employee;
+            return EmployeeToDTO(employee);
         }
 
         // PUT: api/Employees/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutEmployee(int id, Employee employee)
+        public async Task<IActionResult> PutEmployee(int id, EmployeeDTO employeeDTO)
         {
-            if (id != employee.Id)
+            if (id != employeeDTO.Id)
             {
                 return BadRequest();
             }
+
+            var employee = await _context.Employees.FindAsync(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+
+            employee.FirstName = employeeDTO.FirstName;
+            employee.LastName = employeeDTO.LastName;
+            employee.JobPosition = employeeDTO.JobPosition;
 
             _context.Entry(employee).State = EntityState.Modified;
 
@@ -77,19 +89,27 @@ namespace AspNet_WebApi_GetStarted.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPost]
-        public async Task<ActionResult<Employee>> PostEmployee(Employee employee)
+        public async Task<ActionResult<Employee>> PostEmployee(EmployeeDTO employeeDTO)
         {
+            var employee = new Employee
+            {
+                FirstName = employeeDTO.FirstName,
+                LastName = employeeDTO.LastName,
+                JobPosition = employeeDTO.JobPosition
+            };
+            
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, employee);
+            return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, EmployeeToDTO(employee));
         }
 
         // DELETE: api/Employees/5
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Employee>> DeleteEmployee(int id)
+        public async Task<ActionResult> DeleteEmployee(int id)
         {
             var employee = await _context.Employees.FindAsync(id);
+            
             if (employee == null)
             {
                 return NotFound();
@@ -98,12 +118,22 @@ namespace AspNet_WebApi_GetStarted.Controllers
             _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();
 
-            return employee;
+            return NoContent();
         }
 
         private bool EmployeeExists(int id)
         {
             return _context.Employees.Any(e => e.Id == id);
         }
+
+
+        private static EmployeeDTO EmployeeToDTO(Employee employee) =>
+            new EmployeeDTO
+            {
+                Id = employee.Id,
+                FirstName = employee.FirstName,
+                LastName = employee.LastName,
+                JobPosition = employee.JobPosition
+            };
     }
 }
