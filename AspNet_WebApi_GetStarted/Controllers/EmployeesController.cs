@@ -63,6 +63,7 @@ namespace AspNet_WebApi_GetStarted.Controllers
             employee.FirstName = employeeDTO.FirstName;
             employee.LastName = employeeDTO.LastName;
             employee.JobPosition = employeeDTO.JobPosition;
+            employee.Salary = employeeDTO.Salary;
 
             _context.Entry(employee).State = EntityState.Modified;
 
@@ -95,7 +96,8 @@ namespace AspNet_WebApi_GetStarted.Controllers
             {
                 FirstName = employeeDTO.FirstName,
                 LastName = employeeDTO.LastName,
-                JobPosition = employeeDTO.JobPosition
+                JobPosition = employeeDTO.JobPosition,
+                Salary = employeeDTO.Salary
             };
             
             _context.Employees.Add(employee);
@@ -133,7 +135,8 @@ namespace AspNet_WebApi_GetStarted.Controllers
                 Id = employee.Id,
                 FirstName = employee.FirstName,
                 LastName = employee.LastName,
-                JobPosition = employee.JobPosition
+                JobPosition = employee.JobPosition,
+                Salary = employee.Salary
             };
     }
 }

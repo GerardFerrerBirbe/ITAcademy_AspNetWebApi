@@ -287,8 +287,6 @@ C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.csprojAssemblyReference.cache
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.AssemblyInfoInputs.cache
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.AssemblyInfo.cs
-C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.RazorTargetAssemblyInfo.cache
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.csproj.CopyComplete
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\staticwebassets\AspNet_WebApi_GetStarted.StaticWebAssets.Manifest.cache
@@ -296,3 +294,7 @@ C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.dll
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.pdb
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.genruntimeconfig.cache
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.MvcApplicationPartsAssemblyInfo.cache

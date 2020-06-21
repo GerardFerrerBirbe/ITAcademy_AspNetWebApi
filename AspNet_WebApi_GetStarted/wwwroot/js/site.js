@@ -66,7 +66,7 @@ function updateEmployee() {
         firstName: document.getElementById('edit-firstName').value.trim(),
         lastName: document.getElementById('edit-lastName').value.trim(),
         jobPosition: document.getElementById('edit-jobPosition').value.trim(),
-        salary: document.getElementById('edit-salary').value.trim(),
+        salary: document.getElementById('edit-salary').value.trim()
     };
 
     fetch(`${uri}/${employeeId}`, {

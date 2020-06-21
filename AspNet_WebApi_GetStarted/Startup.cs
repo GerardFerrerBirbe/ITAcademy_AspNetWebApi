@@ -28,7 +28,10 @@ namespace AspNet_WebApi_GetStarted
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MyContext>(opt =>
-               opt.UseInMemoryDatabase("MyList"));
+               opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //UseInMemoryDatabase("MyList") : per utilitzar en memòria local
+
             services.AddControllers();
         }
 

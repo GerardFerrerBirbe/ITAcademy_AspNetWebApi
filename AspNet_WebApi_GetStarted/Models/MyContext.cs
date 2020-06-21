@@ -13,6 +13,11 @@ namespace AspNet_WebApi_GetStarted.Models
         {
         }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
+
         public DbSet<Employee> Employees { get; set; }
     }
 }
