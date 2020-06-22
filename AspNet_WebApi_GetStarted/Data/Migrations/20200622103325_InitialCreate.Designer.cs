@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AspNet_WebApi_GetStarted.Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20200620162522_InitialCreate")]
+    [Migration("20200622103325_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,6 +38,9 @@ namespace AspNet_WebApi_GetStarted.Data.Migrations
 
                     b.Property<double>("Salary")
                         .HasColumnType("float");
+
+                    b.Property<string>("Secret")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

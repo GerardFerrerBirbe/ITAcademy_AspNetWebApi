@@ -11,12 +11,7 @@ namespace AspNet_WebApi_GetStarted.Models
         public MyContext(DbContextOptions<MyContext> options)
             : base(options)
         {
-        }
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-        }
+        }        
 
         public DbSet<Employee> Employees { get; set; }
     }

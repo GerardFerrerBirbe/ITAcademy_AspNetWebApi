@@ -18,7 +18,7 @@ function addEmployee() {
         firstName: addFirstNameTextbox.value.trim(),
         lastName: addLastNameTextbox.value.trim(),
         jobPosition: addJobPositionTextbox.value.trim(),
-        salary: addSalaryTextbox.value.trim()
+        salary: parseFloat(addSalaryTextbox.value.trim())
     };
 
     fetch(uri, {
@@ -66,7 +66,7 @@ function updateEmployee() {
         firstName: document.getElementById('edit-firstName').value.trim(),
         lastName: document.getElementById('edit-lastName').value.trim(),
         jobPosition: document.getElementById('edit-jobPosition').value.trim(),
-        salary: document.getElementById('edit-salary').value.trim()
+        salary: parseFloat(document.getElementById('edit-salary').value.trim())
     };
 
     fetch(`${uri}/${employeeId}`, {
@@ -86,7 +86,7 @@ function updateEmployee() {
 }
 
 function closeInput() {
-    document.getElementById('editForm').style.display = '';
+    document.getElementById('editForm').style.display = 'none';
 }
 
 function _displayCount(employeeCount) {

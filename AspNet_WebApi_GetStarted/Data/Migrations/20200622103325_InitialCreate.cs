@@ -15,7 +15,8 @@ namespace AspNet_WebApi_GetStarted.Data.Migrations
                     FirstName = table.Column<string>(nullable: true),
                     LastName = table.Column<string>(nullable: true),
                     JobPosition = table.Column<string>(nullable: true),
-                    Salary = table.Column<double>(nullable: false)
+                    Salary = table.Column<double>(nullable: false),
+                    Secret = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

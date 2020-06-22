@@ -11,7 +11,7 @@ namespace AspNet_WebApi_GetStarted.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string JobPosition { get; set; }
-        public string Salary { get; set; }
+        public double Salary { get; set; }
         public string Secret { get; set; } //Camp 'secret', per explicar la part del tutorial de microsoft docs de prevenció d'excés de publicació
     }
     

@@ -11,6 +11,6 @@ namespace AspNet_WebApi_GetStarted.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string JobPosition { get; set; }
-        public string Salary { get; set; }
+        public double Salary { get; set; }
     }
 }
