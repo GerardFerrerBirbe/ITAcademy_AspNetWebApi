@@ -296,8 +296,6 @@ C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.genruntimeconfig.cache
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.Design.dll
 C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.Design.dll
-C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -449,3 +447,16 @@ C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\o
 C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.dll
 C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.pdb
 C:\Users\User\Downloads\ITAcademy_AspNetWebApi-master\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.genruntimeconfig.cache
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Google Drive\Git\AspNetWebApi\AspNet_WebApi_GetStarted\obj\Debug\netcoreapp3.1\AspNet_WebApi_GetStarted.MvcApplicationPartsAssemblyInfo.cache

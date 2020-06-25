@@ -20,18 +20,21 @@ namespace AspNet_WebApi_GetStarted
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-        }
+        }        
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MyContext>(opt =>
-               opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            //services.AddDbContext<MyContext>(opt =>
+            //   opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             //UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); amb sqlserver
-            //UseInMemoryDatabase("MyList") : per utilitzar en memòria local
+            //UseInMemoryDatabase("MyList")); : per utilitzar en memòria local
+
+            services.AddTransient<MyContext>(_ => new MyContext(Configuration["ConnectionStrings:DefaultConnection"]));
 
             services.AddControllers();
         }
